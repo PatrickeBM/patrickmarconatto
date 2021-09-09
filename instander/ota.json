@@ -1,6 +1,6 @@
 {
-	"version": "12.1",
-	"changelog": "— Fixed downloading;\n— Changed default path to download to /Pictures/Instander;\n— Added Ethereum to donate;\n— Added OTA chagelog on russian.",
-	"changelog-ru": "— Исправлена загрузка фото/видео/сторис;\n— Изменен путь по умолчанию для загрузки на /Pictures/Instander;\n— Добавлен Ethereum для пожертвования;\n— Добавлен журнал изменений в OTA на русском языке.",
-	"link": "https://build.vanutp.dev/instander/instander-v12.1.apk"
+	"version": "13.0",
+	"changelog": "— Rebase to Instagram 202.0.0.37.123;\n— Added Video scrubber in settings;\n— Added PayPal to Donation Menu;\n— Added Tinkoff to Donation Menu;\n— Remade of copying and translation of comments (Misс/Additional menu for comment);\n— Improve quality in Stories Camera;\n— Removed Unmutual followers (Due to changes in Instagram API no longer works);\n— Optimizations Instander code;\n— Fixed many crashes.",
+	"changelog-ru": "— Обновление базы до Instagram 202.0.0.37.123;\n— Добавлена Перемотка видео в настройках;\n— В меню пожертвований добавлен PayPal;\n— В меню пожертвований добавлен Тинькофф;\n— Переделал копирование и перевод комментариев (Разное/Дополнительное меню для комментариев);\n— Улучшение качества в камере сторис;\n— Удалены Не взаимные подписчики (из-за изменений в Instagram API это больше не работает);\n— Оптимизация кода Instander;\n— Исправлено множество сбоев.",
+	"link": "https://build.vanutp.dev/instander/instander-13.0.apk"
 }
