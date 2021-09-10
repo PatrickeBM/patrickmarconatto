@@ -2,5 +2,5 @@
 	"version": "13.1",
 	"changelog": "— Rebase to Instagram 202.0.0.37.123;\n— Added Video scrubber in settings;\n— Added PayPal to Donation Menu;\n— Added Tinkoff to Donation Menu;\n— Remade of copying and translation of comments (Misс/Additional menu for comment);\n— Improve quality in Stories Camera;\n— Removed Unmutual followers (Due to changes in Instagram API no longer works);\n— Optimizations Instander code;\n— Fixed many crashes;\n— Fixed watching live broadcasts;\n— Increased number of characters to copy up to 5000.",
 	"changelog-ru": "— Обновление базы до Instagram 202.0.0.37.123;\n— Добавлена Перемотка видео в настройках;\n— В меню пожертвований добавлен PayPal;\n— В меню пожертвований добавлен Тинькофф;\n— Переделал копирование и перевод комментариев (Разное/Дополнительное меню для комментариев);\n— Улучшение качества в камере сторис;\n— Удалены Не взаимные подписчики (из-за изменений в Instagram API это больше не работает);\n— Оптимизация кода Instander;\n— Исправлено множество сбоев;\n— Исправлен просмотр прямых трансляций;\n— Увеличено количество копируемых символов до 5000.",
-	"link": "https://github.com/the-dise/Instander/releases/download/Instander/instander-13.1-c.apk"
+	"link": "https://github.com/the-dise/Instander/releases/download/v13.1/instander-13.1-c.apk"
 }
