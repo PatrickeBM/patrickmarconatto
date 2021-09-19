@@ -1,6 +1,6 @@
 {
-	"version": "13.1",
-	"changelog": "— Rebase to Instagram 202.0.0.37.123;\n— Added Video scrubber in settings;\n— Added PayPal to Donation Menu;\n— Added Tinkoff to Donation Menu;\n— Remade of copying and translation of comments (Misс/Additional menu for comment);\n— Improve quality in Stories Camera;\n— Removed Unmutual followers (Due to changes in Instagram API no longer works);\n— Optimizations Instander code;\n— Fixed many crashes;\n— Fixed watching live broadcasts;\n— Increased number of characters to copy up to 5000.",
-	"changelog-ru": "— Обновление базы до Instagram 202.0.0.37.123;\n— Добавлена Перемотка видео в настройках;\n— В меню пожертвований добавлен PayPal;\n— В меню пожертвований добавлен Тинькофф;\n— Переделал копирование и перевод комментариев (Разное/Дополнительное меню для комментариев);\n— Улучшение качества в камере сторис;\n— Удалены Не взаимные подписчики (из-за изменений в Instagram API это больше не работает);\n— Оптимизация кода Instander;\n— Исправлено множество сбоев;\n— Исправлен просмотр прямых трансляций;\n— Увеличено количество копируемых символов до 5000.",
-	"link": "https://github.com/the-dise/instander-release/releases/download/13.1/Instander.13.1.apk"
+	"version": "14.0",
+	"changelog": "— Rebase to Instagram 205.0.0.34.114;\n— Added animation splash screen for Android 12;\n— Added menu with Instander Team;\n— Fixed the display of ads;\n— Fixed errors in subscription and likes;\n— Fixed adding Reels and IGTV to your Stories;\n— Fixed Photos in max quality;\n— Fixed action buttons in comments;\n— Fixed Download button in your Stories.",
+	"changelog-ru": "— Обновление базы до Instagram 205.0.0.34.114;\n— Добавлена анимационная заставка для Android 12;\n— Добавлено меню с командой Instander Team;\n— Исправлено отображение рекламы;\n— Исправлены ошибки при подписке и лайках постов;\n— Исправлено добавление Reels и IGTV в ваши Stories;\n— Исправлено отображение фото в максимальном качестве;\n— Исправлены кнопки действий в комментариях;\n— Исправлена кнопка Скачать в ваших историях.",
+	"link": "https://build.vanutp.dev/instander/instander-14.0.apk"
 }
