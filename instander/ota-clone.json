@@ -1,6 +1,6 @@
 {
-	"version": "14.0",
-	"changelog": "— Rebase to Instagram 205.0.0.34.114;\n— Added animation splash screen for Android 12;\n— Added menu with Instander Team;\n— Fixed the display of ads;\n— Fixed errors in subscription and likes;\n— Fixed adding Reels and IGTV to your Stories;\n— Fixed Photos in max quality;\n— Fixed action buttons in comments;\n— Fixed Download button in your Stories.",
-	"changelog-ru": "— Обновление базы до Instagram 205.0.0.34.114;\n— Добавлена анимационная заставка для Android 12;\n— Добавлено меню с командой Instander Team;\n— Исправлено отображение рекламы;\n— Исправлены ошибки при подписке и лайках постов;\n— Исправлено добавление Reels и IGTV в ваши Stories;\n— Исправлено отображение фото в максимальном качестве;\n— Исправлены кнопки действий в комментариях;\n— Исправлена кнопка Скачать в ваших историях.",
-	"link": "https://build.vanutp.dev/instander/clone/instander-14.0-c.apk"
+	"version": "14.1",
+	"changelog": "— Fixed action buttons with comments;\n— Fixed application crash due to notifications;\n— Fixed crash on entering Direct;\n— Fixed when switching to the first photo in profile;\n— Fixed pin icon in comments.",
+	"changelog-ru": "— Исправлены кнопки действий с комментариями;\n— Исправлено падение приложения из-за уведомлений;\n— Исправлена ошибка при входе в Direct;\n— Исправлено переключение на первую фотографию в профиле;\n— Исправлена иконка закрепа в комментариях.",
+	"link": "https://build.vanutp.dev/instander/clone/instander-14.1-c.apk"
 }
