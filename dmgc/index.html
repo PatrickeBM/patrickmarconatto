@@ -32,6 +32,14 @@
       color: #2196F3;
     }
 
+    a.attention-icon {
+      color: #212121;
+    }
+
+    a.attention-icon:hover {
+      color: #2196F3;
+    }
+
     .brand-text {
       fill: #333;
     }
@@ -87,11 +95,19 @@
       a.table-link {
         color: #f5f5f5;
       }
-      
+
       a.table-link:hover {
         color: #2196F3;
       }
 
+      a.attention-icon {
+        color: #fff;
+      }
+
+      a.attention-icon:hover {
+        color: #2196F3;
+      }
+      
       .brand-text {
         fill: #f5f5f5;
       }
@@ -209,6 +225,24 @@
     </header>
     <!-- M O D A L S  S T A R T -->
     <div>
+      <div class="modal fade" id="abandonedinfo" tabindex="-1" role="dialog" aria-labelledby="..." aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title gsmedium" id="ModalLabel">DMGC freezing information</h4>
+              <a class="close" data-dismiss="modal" aria-label="Close"><span class="mdi mdi-24px mdi-close"></span></a>
+            </div>
+            <div class="modal-body">
+              The main reason for closing the project was to buy a phone Google Pixel 4. Since the Google Camera there preinstalled the need for support and development of mods disappeared. 
+              <br>
+              Perhaps in the future the project will be unfrozen and will be aimed at improving the camera for Google Pixel devices.
+              <br><br>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="modal fade" id="log50" tabindex="-1" role="dialog" aria-labelledby="..." aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -1192,6 +1226,7 @@
     <main role="main">
       <h1 class="display-4 gsbold">DMGC</h1>
       <p class="lead">The fastest and most stable port of Google Camera</p>
+      <p class="attention">Attention! The project was frozen indefinitely. <a href="#" class="attention-icon" data-toggle="modal" data-target="#abandonedinfo"><span class="mdi mdi-information-outline"></span></a></p>
       <br>
       <ul class="nav nav-pills mr-2 justify-content-center mb-4 noselect" id="pills-tab" role="tablist">
         <li class="nav-item">
@@ -1229,7 +1264,7 @@
               </thead>
               <tr>
                 <th><a class="table-link" href="//build.vanutp.dev/dmgc/dmgc-5.0.apk">DMGC 5.0</a></th>
-                <th><span class="badge badge-table badge-stable">Stable</span></th>
+                <th><span class="badge badge-table badge-dmgc">Final</span></th>
                 <th class="text-grey">24/04/21</th>
                 <th><a href="#" class="btn btn-info" data-toggle="modal" data-target="#log50"><span class="mdi mdi-information-outline"></span> Info</a></th>
               </tr>
