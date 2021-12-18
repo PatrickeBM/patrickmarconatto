@@ -15,124 +15,33 @@
   <script src="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" type="text/javascript"></script>
 
   <style type="text/css">
-  body{background: #F5F5F5;color: #212121}
-  a{color: #444444}
-  a:hover{color: #f06292;text-decoration: none;}
-
-  a.table-link {
-    color: #212121;
-  }
-
-  a.table-link:hover {
-    color: #f06292;
-  }
-
-  .brand-text {
-    fill: #333;
-  }
-  .brand-main {
-    fill: #f06292;
-  }
-  .nav-masthead .nav-link {
-    font-weight: 500;
-    color: #9E9E9E;
-    border-color: transparent;
-  }
-
-  .nav-masthead .active {
-    color: #212121;
-    border-bottom-color: #212121;
-  }
-
-  .nav-masthead .nav-link:hover,
-  .nav-masthead .nav-link:focus {
-    color: #f06292;
-    border-bottom-color: #f06292;
-  }
-
-  .dropdown-menu {
-    color: #212121;
-    background-color: #EEEEEE;
-  }
-
-  .dropdown-item {
-    color: #212121;
-  }
-
-  .dropdown-item:hover, .dropdown-item:focus {
-    color: #212121;
-    background-color: rgba(236,64,122,.5);
-  }
-
-  .dropdown-item.active, .dropdown-item:active {
-    color: #212121;
-    background-color: #f06292;
-  }
-
-  .dropdown-item.disabled, .dropdown-item:disabled {
-    color: #9E9E9E;
-  }
-
-  .tooltip-inner {
-    color: #f5f5f5;
-    background-color: #212121;
-  }
-
-  a.btn-donut {
-    color: #212121;
-    background-color: rgba(0,0,0,0.1);
-    padding: 0.25rem 0.5rem;
-    font-size: 0.875rem;
-    line-height: 1.5;
-    font-size: 18px;
-    border-radius: 50px;
-    font-family: Google Sans Regular;
-    text-decoration: none;
-  }
-
-  a.btn-donut:hover {
-    color: #f06292;
-    text-decoration: none;
-  }
-
-  .table p{
-    color: #424242;
-  }
-
-  /* Dark Theme */
-  @media (prefers-color-scheme: dark) {
-    body{background: #111; color: #F5F5F5}
+    body{background: #F5F5F5;color: #212121}
     a{color: #444444}
+    a:hover{color: #f06292;text-decoration: none;}
 
     a.table-link {
-      color: #f5f5f5;
+      color: #212121;
     }
 
-    .table {
-      width: 100%;
-      margin-bottom: 2rem;
-      color: #EEEEEE;
-    }
-
-    .table thead th {
-      border-bottom: 2px solid #424242;
-      color: #F5F5F5
+    a.table-link:hover {
+      color: #f06292;
     }
 
     .brand-text {
-      fill: #f5f5f5;
+      fill: #333;
     }
     .brand-main {
       fill: #f06292;
     }
     .nav-masthead .nav-link {
       font-weight: 500;
-      color: #9E9E9E;     
+      color: #9E9E9E;
+      border-color: transparent;
     }
 
     .nav-masthead .active {
-      color: #f5f5f5;
-      border-bottom-color: #F5F5F5;
+      color: #212121;
+      border-bottom-color: #212121;
     }
 
     .nav-masthead .nav-link:hover,
@@ -141,26 +50,22 @@
       border-bottom-color: #f06292;
     }
 
-    .mastfoot {
-      color: #444444;
-    }
-
     .dropdown-menu {
-      color: #F5F5F5;
-      background-color: #212121;
+      color: #212121;
+      background-color: #EEEEEE;
     }
 
     .dropdown-item {
-      color: #f5f5f5;
+      color: #212121;
     }
 
     .dropdown-item:hover, .dropdown-item:focus {
-      color: #f5f5f5;
+      color: #212121;
       background-color: rgba(236,64,122,.5);
     }
 
     .dropdown-item.active, .dropdown-item:active {
-      color: #fff;
+      color: #212121;
       background-color: #f06292;
     }
 
@@ -169,13 +74,13 @@
     }
 
     .tooltip-inner {
-      color: #212121;
-      background-color: #F5F5F5;
+      color: #f5f5f5;
+      background-color: #212121;
     }
 
     a.btn-donut {
-      color: #fff;
-      background-color: rgba(255,255,255,0.1);
+      color: #212121;
+      background-color: rgba(0,0,0,0.1);
       padding: 0.25rem 0.5rem;
       font-size: 0.875rem;
       line-height: 1.5;
@@ -190,20 +95,115 @@
       text-decoration: none;
     }
 
-    .modal-content {
-      background-color: #333;
-    }
-
-    .btn-instander {
-      color: #F5F5F5;
-      border-color: #f5f5f5;
-    }
-
     .table p{
-      color: #ffffff;
+      color: #424242;
     }
-  }
-</style>
+
+    /* Dark Theme */
+    @media (prefers-color-scheme: dark) {
+      body{background: #111; color: #F5F5F5}
+      a{color: #444444}
+
+      a.table-link {
+        color: #f5f5f5;
+      }
+
+      .table {
+        width: 100%;
+        margin-bottom: 2rem;
+        color: #EEEEEE;
+      }
+
+      .table thead th {
+        border-bottom: 2px solid #424242;
+        color: #F5F5F5
+      }
+
+      .brand-text {
+        fill: #f5f5f5;
+      }
+      .brand-main {
+        fill: #f06292;
+      }
+      .nav-masthead .nav-link {
+        font-weight: 500;
+        color: #9E9E9E;     
+      }
+
+      .nav-masthead .active {
+        color: #f5f5f5;
+        border-bottom-color: #F5F5F5;
+      }
+
+      .nav-masthead .nav-link:hover,
+      .nav-masthead .nav-link:focus {
+        color: #f06292;
+        border-bottom-color: #f06292;
+      }
+
+      .mastfoot {
+        color: #444444;
+      }
+
+      .dropdown-menu {
+        color: #F5F5F5;
+        background-color: #212121;
+      }
+
+      .dropdown-item {
+        color: #f5f5f5;
+      }
+
+      .dropdown-item:hover, .dropdown-item:focus {
+        color: #f5f5f5;
+        background-color: rgba(236,64,122,.5);
+      }
+
+      .dropdown-item.active, .dropdown-item:active {
+        color: #fff;
+        background-color: #f06292;
+      }
+
+      .dropdown-item.disabled, .dropdown-item:disabled {
+        color: #9E9E9E;
+      }
+
+      .tooltip-inner {
+        color: #212121;
+        background-color: #F5F5F5;
+      }
+
+      a.btn-donut {
+        color: #fff;
+        background-color: rgba(255,255,255,0.1);
+        padding: 0.25rem 0.5rem;
+        font-size: 0.875rem;
+        line-height: 1.5;
+        font-size: 18px;
+        border-radius: 50px;
+        font-family: Google Sans Regular;
+        text-decoration: none;
+      }
+
+      a.btn-donut:hover {
+        color: #f06292;
+        text-decoration: none;
+      }
+
+      .modal-content {
+        background-color: #333;
+      }
+
+      .btn-instander {
+        color: #F5F5F5;
+        border-color: #f5f5f5;
+      }
+
+      .table p{
+        color: #ffffff;
+      }
+    }
+  </style>
 </head>
 <body class="text-center pattern">
   <div id="page-preloader" style="display: none;">
@@ -247,6 +247,36 @@
     </header>
 
     <!-- Chengelogs -->
+
+    <div class="modal fade" id="log150" tabindex="-1" role="dialog" aria-labelledby="..." aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title gsmedium" id="ModalLabel">Info</h4>
+            <a class="close" data-dismiss="modal" aria-label="Close"><span class="mdi mdi-24px mdi-close"></span></a>
+          </div>
+          <div class="modal-body">
+            <p class="gsmedium">Changelog:</p>
+            <ul>
+              <li>Rebase to Instagram 215.0.0.27.359;</li>
+              <li>Added Link sticker;</li>
+              <li>Added Add yours sticker;</li>
+              <li>"Video scrubber" is forced on;</li>
+              <li>Remove "Video scrubber" option;</li>
+              <li>Temporarily not added "Mark as read" in direct (<a href="https://t.me/thedise/1590">Link</a>);</li>
+              <li>Temporarily not added download IGTV (<a href="https://t.me/thedise/1590">Link</a>);</li>
+              <li>Attention ads in "Old posts" is present</li>
+            </ul>
+            <br>
+            <span class="badge badge-gcam">Instagram 215.0.0.27.359</span>
+            <span class="badge badge-dmgc">ARMv7 / ARMv8</span>
+            <span class="badge badge-android">Android 5+</span>
+            <br>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="gsregular">
       <div class="modal fade" id="log141" tabindex="-1" role="dialog" aria-labelledby="..." aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -704,8 +734,15 @@
               </thead>
               <tbody>
                 <tr>
-                  <th><a class="table-link" href="https://build.vanutp.dev/instander/instander-14.1.apk">Instander 14.1</a></th>
+                  <th><a class="table-link" href="https://build.vanutp.dev/instander/Instander%20ver.15.0.apk">Instander 15.0</a></th>
                   <th><span class="badge badge-table badge-stable">Сurrent</span></th>
+                  <th class="text-grey">18/12/21</th>
+                  <th><a href="#" class="btn btn-info-inst" data-toggle="modal" data-target="#log150"><span class="mdi mdi-information-outline"></span> Info</a></th>
+                </tr>
+
+                <tr>
+                  <th><a class="table-link" href="https://build.vanutp.dev/instander/instander-14.1.apk">Instander 14.1</a></th>
+                  <th><span class="badge badge-table badge-dmgc">Old</span></th>
                   <th class="text-grey">23/09/21</th>
                   <th><a href="#" class="btn btn-info-inst" data-toggle="modal" data-target="#log141"><span class="mdi mdi-information-outline"></span> Info</a></th>
                 </tr>
@@ -879,8 +916,15 @@
                 <tbody>
                   <tr>
                     <tr>
-                      <th><a class="table-link" href="https://build.vanutp.dev/instander/clone/instander-14.1-c.apk">Instander 14.1 Clone</a></th>
+                      <th><a class="table-link" href="https://build.vanutp.dev/instander/clone/Instander%20ver.15.0%20Clone.apk">Instander 15.0 Clone</a></th>
                       <th><span class="badge badge-table badge-stable">Сurrent</span></th>
+                      <th class="text-grey">18/12/21</th>
+                      <th><a href="#" class="btn btn-info-inst" data-toggle="modal" data-target="#log150"><span class="mdi mdi-information-outline"></span> Info</a></th>
+                    </tr>
+
+                    <tr>
+                      <th><a class="table-link" href="https://build.vanutp.dev/instander/clone/instander-14.1-c.apk">Instander 14.1 Clone</a></th>
+                      <th><span class="badge badge-table badge-dmgc">Old</span></th>
                       <th class="text-grey">23/09/21</th>
                       <th><a href="#" class="btn btn-info-inst" data-toggle="modal" data-target="#log141"><span class="mdi mdi-information-outline"></span> Info</a></th>
                     </tr>
