@@ -1,6 +1,6 @@
 {
-	"version": "15.0",
-	"changelog": "— Rebase to Instagram 215.0.0.27.359;\n— Added Link sticker;\n— Added Add yours sticker;\n— Video scrubber is forced on;\n— Remove Video scrubber option;\n— Temporarily not added Mark as read in direct;\n— Temporarily not added download IGTV;\n— Attention ads in Old posts is present.",
-	"changelog-ru": "— Переезд на Instagram 215.0.0.27.359;\n— Добавлен стикер Ссылка;\n— Добавлен стикер Добавить ваш;\n— Принудительно включена перемотка видео;\n— Удалите опцию Перемотка видео;\n— Временно не добавлена опция Отметить как прочитанное в директ;\n— Временно не добавлена загрузка IGTV;\n— Внимание реклама в Старых постах присутствует.",
-	"link": "https://build.vanutp.dev/instander/Instander%20ver.15.0.apk"
+	"version": "15.1",
+	"changelog": "— Added IGTV download item;\n— Added Mark as Read;\n— Added quick turn on Don't mark Direct as read (long press direct button);\n— Added turn off auto-flipping storis;\n— Added backups of Instander settings;\n— Added Instander menu (download, preview, direct link to post);\n— Fixed avatar zoom;\n— Fixed account type change;\n— Ads switch fixed.",
+	"changelog-ru": "— Добавлен пункт скачивания IGTV;\n— Добавлено Отметить как прочитано;\n— Добавлено быстрое включение нечиталки (зажать кнопку директа);\n— Добавлено отключение авто перелистывания сторис;\n— Добавлен бейкап настроек Instander;\n— Добалено меню Instander (скачивание, превью, прямая ссылка на пост);\n— Исправлен зум аватарок;\n— Исправлено изменение типа аккаунта;\n— Исправлен переключатель рекламы.",
+	"link": "https://build.vanutp.dev/instander/instander-15.1.apk"
 }
