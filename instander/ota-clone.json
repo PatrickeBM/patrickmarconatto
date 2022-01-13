@@ -1,6 +1,6 @@
 {
-	"version": "15.1",
-	"changelog": "— Added IGTV download item;\n— Added Mark as Read;\n— Added quick turn on Don't mark Direct as read (long press direct button);\n— Added turn off auto-flipping storis;\n— Added backups of Instander settings;\n— Added Instander menu (download, preview, direct link to post);\n— Fixed avatar zoom;\n— Fixed account type change;\n— Ads switch fixed.",
-	"changelog-ru": "— Добавлен пункт скачивания IGTV;\n— Добавлено Отметить как прочитано;\n— Добавлено быстрое включение нечиталки (зажать кнопку директа);\n— Добавлено отключение авто перелистывания сторис;\n— Добавлен бейкап настроек Instander;\n— Добалено меню Instander (скачивание, превью, прямая ссылка на пост);\n— Исправлен зум аватарок;\n— Исправлено изменение типа аккаунта;\n— Исправлен переключатель рекламы.",
-	"link": "https://build.vanutp.dev/instander/clone/instander-15.1-c.apk"
+	"version": "15.2",
+	"changelog": "— Forcing the snow off for those who upgraded from XE version;\n— Fix of random application crash on some phones.",
+	"changelog-ru": "— Принудительное отключение снега для тех кто обновлялся с XE версии;\n— Фикс рандомного краша приложения на некоторых телефонах.",
+	"link": "https://build.vanutp.dev/instander/clone/instander-15.2-c.apk"
 }
