@@ -1,6 +1,6 @@
 {
-	"version": "15.3",
-	"changelog": "— Fixed random crash on Samsung with One UI 4;\n— Fixed crash Mark as read on some phones;\n— Rebuild application using the latest tools.",
-	"changelog-ru": "— Исправлен случайный сбой на Samsung с One UI 4;\n— Исправлена ошибка Пометить как прочитанное на некоторых телефонах;\n— Пересборка приложения, с использованием новейших инструментов.",
-	"link": "https://build.vanutp.dev/instander/clone/instander-15.3-c.apk"
+	"version": "15.4",
+	"changelog": "— Due to the blocking restrictions of some payment systems, they were removed from the list of donations.\n\n#NoWar",
+	"changelog-ru": "— В связи с ограничениями блокировки некоторых платежных систем, они были удалены из списка пожертвований.\n\n#NoWar",
+	"link": "https://build.vanutp.dev/instander/clone/instander-15.4-c.apk"
 }
