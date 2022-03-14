@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>the_dise</title>
-
-
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta name="yandex-verification" content="35d8e75ff211ef1f" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="description" content="This is the personal web-site of Dmitry Gavrilov, also known as the_dise.
-	Almost all of his projects are collected here, for example: Instander, DMGC, TikTok Mod, Aion and more">
+	<title>Instander Verification</title>
+
 	<!-- Favicon -->
 	<link rel="shortcut icon" href="/src/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="/src/favicon.ico" type="image/x-icon">
-	<meta name="robots" content="index, follow" />
+
 	<!-- Grid & Icons -->
 	<link rel="stylesheet" href="/src/css/bootstrap.css">
+	<link rel="stylesheet" href="/src/css/colors.css">
+	<link rel="stylesheet" href="/src/css/style.css">
 	<link rel="stylesheet" href="//cdn.materialdesignicons.com/4.5.95/css/materialdesignicons.min.css">
 
 	<!-- Scripts -->
@@ -22,15 +20,20 @@
 	<script src="/src/popper.min.js"></script>
 	<script src="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<script src="/src/i18n.js"></script>
-
-	<script data-ad-client="ca-pub-5516601600866049" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
 	
 	<!-- Styles -->
 	<style type="text/css">
 		body{background: #F5F5F5;color: #212121}
 		a{color: #444444}
 		a:hover{color: #dc3545; text-decoration: none;}
+
+		div#explanatoryText div {
+			display: none;
+		}
+
+		div#explanatoryText div.descriptor {
+			display: block;
+		}
 
 
 		.brand-text {
@@ -226,30 +229,66 @@
 				</nav>
 			</div>
 		</header>
+
 		<main role="main">
-			<h1 class="display-4 gsbold"><span id="name"></span></h1>
-			<p class="lead gsregular"><span id="about"></span></p>
-			<br>
-			<p class="social d-flex justify-content-center">
-				<a href="tg://resolve?domain=the_dise" class="mx-2 telegram" data-tooltip="Telegram">
-					<span class="mdi mdi-telegram"></span>
-				</a>
-				<a href="//instagram.com/the_dise_" class="mx-2 instagram" data-tooltip="Instagram">
-					<span class="mdi mdi-instagram"></span>
-				</a>
-				<a href="//vk.com/the_dise" class="mx-2 vk" data-tooltip="VK">
-					<span class="mdi mdi-vk"></span>
-				</a>
-				<a href="//twitter.com/the_dise/" class="mx-2 twitter" data-tooltip="Twitter">
-					<span class="mdi mdi-twitter"></span>
-				</a>
-				<a href="//youtube.com/c/thedise/" class="mx-2 youtube" data-tooltip="YouTube">
-					<span class="mdi mdi-youtube"></span>
-				</a>
-				<a href="//open.spotify.com/user/the_dise" class="mx-2 spotify" data-tooltip="Spotify">
-					<span class="mdi mdi-spotify"></span>
-				</a>
-			</p>
+
+			<form class="g-form" id="g-form-1" method="POST" action="" autocomplete="off">
+				<!-- <p class="lead gsregular"><span id="about"></span></p> -->
+				<h2 class="g-form__title g-form__title_main gsregular">Leave a request right now</h2>
+				<h2 class="g-form__title g-form__title_respond gsregular"></h2>
+				<div class="g-form__preloader"></div>
+				<div class="g-form__inputs">
+					<fieldset class="g-form__input-wrapper">
+						<select class="g-form__input" name="Payment system" id="name" required>
+							<option value="Monobank">Monobank</option>
+							<option value="Ethereum">Ethereum</option>
+							<option value="TON Coin">TON Coin</option>
+							<option value="YooMoney">YooMoney</option>
+							<option disabled selected hidden value="">Выберете платежную систему</option>
+						</select>
+					</fieldset>
+
+					<!-- Mono -->
+					<fieldset class="g-form__input-wrapper">
+						<input class="g-form__input g-form__input_value" id="value" name="Value" placeholder="Сумма перевода" required>
+					</fieldset>
+					<fieldset class="g-form__input-wrapper">
+						<input style="text-transform: uppercase;" type="datetime-local" class="g-form__input" id="date" name="Date" placeholder="Дата перевода" required>
+					</fieldset>
+					<div id="explanatoryText">
+						<div></div>
+						<div>
+							<fieldset class="g-form__input-wrapper">
+								<input class="g-form__input" id="ether-hash" name="ETH Hash" placeholder="Paste transaction hash" >
+							</fieldset>
+						</div>
+						<div>
+							<fieldset class="g-form__input-wrapper">
+								<input class="g-form__input " id="ton-hash" name="TON Hash" placeholder="Paste transaction hash" >
+							</fieldset>
+						</div>
+						<div></div>
+					</div>
+
+					<fieldset class="g-form__input-wrapper">
+						<input class="g-form__input g-form__input_username" name="Username" placeholder="Введите ваш @username">
+					</fieldset>
+
+					<fieldset class="g-form__input-wrapper">
+						<textarea id="message" name="Message" rows="10"
+						placeholder="Введите сообщение"></textarea>
+					</fieldset>
+
+					<fieldset class="g-form__input-wrapper g-form__input-wrapper_hidden">
+						<label for="honeypot">Помогает бороться со спамом. Должно быть пустым!</label>
+						<input id="honeypot" type="text" name="honeypot" value="">
+					</fieldset>
+
+					<div class="g-form__button-wrapper">
+						<button class="g-form__button">Submit</button>
+					</div>
+				</div>
+			</form>
 		</main>
 
 		<footer class="mastfoot mt-auto">
@@ -260,6 +299,7 @@
 		</footer>
 	</div>
 
+	<!-- i18n script -->
 	<script>
 		$.i18n.init({
 			defaultLanguage: 'en',
@@ -267,7 +307,6 @@
 			useLocalStorage: false,
 			debug: false
 		}, function() {
-			$('#name').text($.t('name'));
 			$('#about').text($.t('about'));
 			$('#nav_home').text($.t('nav_home'));
 			$('#nav_project').text($.t('nav_project'));
@@ -276,20 +315,58 @@
 		});
 	</script>
 
+	<!-- dropdown -->
 	<script type="text/javascript">
 		$('#lang').on('show.bs.dropdown', function () {
 		})
 	</script>
 
-
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="//www.googletagmanager.com/gtag/js?id=UA-151959411-1"></script>
+	<!-- Username mask -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
 	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+		$(function() {
+			$('.g-form__input_username').mask('@ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ', {
+				translation: {
+					'Z': {
+						pattern: /[a-z_0-9.]/, optional: true
+					}
+				}
+			});
+		});
 
-		gtag('config', 'UA-151959411-1');
+		$(function() {
+			$('.g-form__input_value').mask('ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ', {
+				translation: {
+					'Z': {
+						pattern: /[0-9.]/, optional: true
+					}
+				}
+			});
+		});
 	</script>
-</body>
-</html>
+
+	<script>
+		$('#name').click(
+			function(){
+				$(this).change();
+			});
+		$('#name').change(
+			function(){
+				var index = $(this).find('option:selected').index();
+				$('#explanatoryText div.descriptor').removeClass('descriptor');
+				$('#explanatoryText div').eq(index).addClass('descriptor');
+			});
+		</script>
+		<script src="/src/g-form.js"></script>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="//www.googletagmanager.com/gtag/js?id=UA-151959411-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-151959411-1');
+		</script>
+	</body>
+	</html>

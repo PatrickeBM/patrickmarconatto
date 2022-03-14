@@ -16,134 +16,115 @@
 
   <!-- Scripts -->
   <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="/src/popper.min.js"></script>
   <script src="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="/src/i18n.js"></script>
 
-  <!-- Yandex.Metrika counter -->
-  <script type="text/javascript" >
-   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-     m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+  <!-- Styles -->
+  <style type="text/css">
+    body{background: #F5F5F5;color: #212121}
+    a{color: #444444}
+    a:hover{color: #EC407A;text-decoration: none;}
 
-   ym(83377027, "init", {
-    clickmap:true,
-    trackLinks:true,
-    accurateTrackBounce:true
-  });
-</script>
-<noscript>
-  <div>
-    <img src="https://mc.yandex.ru/watch/83377027" style="position:absolute; left:-9999px;" alt="" />
-  </div>
-</noscript>
-<!-- /Yandex.Metrika counter -->
+    .brand-text {
+      fill: #333;
+    }
+    .brand-main {
+      fill: #EC407A;
+    }
+    .nav-masthead .nav-link {
+      font-weight: 500;
+      color: #9E9E9E;
+      border-color: transparent;
+    }
 
-<!-- Styles -->
-<style type="text/css">
-body{background: #F5F5F5;color: #212121}
-a{color: #444444}
-a:hover{color: #EC407A;text-decoration: none;}
+    .nav-masthead .active {
+      color: #212121;
+      border-bottom-color: #212121;
+    }
 
-.brand-text {
-  fill: #333;
-}
-.brand-main {
-  fill: #EC407A;
-}
-.nav-masthead .nav-link {
-  font-weight: 500;
-  color: #9E9E9E;
-  border-color: transparent;
-}
+    .nav-masthead .nav-link:hover,
+    .nav-masthead .nav-link:focus {
+      color: #EC407A;
+      border-bottom-color: #EC407A;
+    }
 
-.nav-masthead .active {
-  color: #212121;
-  border-bottom-color: #212121;
-}
+    .dropdown-menu {
+      color: #212121;
+      background-color: #EEEEEE;
+    }
 
-.nav-masthead .nav-link:hover,
-.nav-masthead .nav-link:focus {
-  color: #EC407A;
-  border-bottom-color: #EC407A;
-}
+    .dropdown-item {
+      color: #212121;
+    }
 
-.dropdown-menu {
-  color: #212121;
-  background-color: #EEEEEE;
-}
+    .dropdown-item:hover, .dropdown-item:focus {
+      color: #212121;
+      background-color: rgba(236,64,122,.5);
+    }
 
-.dropdown-item {
-  color: #212121;
-}
+    .dropdown-item.active, .dropdown-item:active {
+      color: #212121;
+      background-color: #EC407A;
+    }
 
-.dropdown-item:hover, .dropdown-item:focus {
-  color: #212121;
-  background-color: rgba(236,64,122,.5);
-}
+    .dropdown-item.disabled, .dropdown-item:disabled {
+      color: #9E9E9E;
+    }
 
-.dropdown-item.active, .dropdown-item:active {
-  color: #212121;
-  background-color: #EC407A;
-}
+    .tooltip-inner {
+      color: #f5f5f5;
+      background-color: #212121;
+    }
 
-.dropdown-item.disabled, .dropdown-item:disabled {
-  color: #9E9E9E;
-}
+    a.btn-donut {
+      color: #212121;
+      background-color: rgba(0,0,0,0.1);
+      padding: 0.25rem 0.5rem;
+      font-size: 0.875rem;
+      line-height: 1.5;
+      font-size: 18px;
+      border-radius: 50px;
+      font-family: Google Sans Regular;
+      text-decoration: none;
+    }
 
-.tooltip-inner {
-  color: #f5f5f5;
-  background-color: #212121;
-}
+    a.btn-donut:hover {
+      color: #EC407A;
+      text-decoration: none;
+    }
 
-a.btn-donut {
-  color: #212121;
-  background-color: rgba(0,0,0,0.1);
-  padding: 0.25rem 0.5rem;
-  font-size: 0.875rem;
-  line-height: 1.5;
-  font-size: 18px;
-  border-radius: 50px;
-  font-family: Google Sans Regular;
-  text-decoration: none;
-}
+    .card {
+      background: #fff;
+    }
 
-a.btn-donut:hover {
-  color: #EC407A;
-  text-decoration: none;
-}
+    img.carousel-item{
+      height: 512px !important;
+    }
 
-.card {
-  background: #fff;
-}
+    .btn-instander.dn {
+      color: #212121 !important; 
+      border-color: #EC407A;
+      margin-top: .5rem;
+      margin-bottom: 0.1rem;
+      border-radius: 10rem;
+      padding: .5rem 2rem;
+      font-size: 1.2rem;
+      line-height: 1.5;
+      font-family: "Google Sans Regular"
+    }
 
-img.carousel-item{
-  height: 512px !important;
-}
+    .btn-instander.dn:hover {
+      color: #fff !important;
+      background-color: #EC407A;
+      border-color: #EC407A;
+      text-decoration: none;
+    }
 
-.btn-instander.dn {
-  color: #212121 !important; 
-  border-color: #EC407A;
-  margin-top: .5rem;
-  margin-bottom: 0.1rem;
-  border-radius: 10rem;
-  padding: .5rem 2rem;
-  font-size: 1.2rem;
-  line-height: 1.5;
-  font-family: "Google Sans Regular"
-}
-
-.btn-instander.dn:hover {
-  color: #fff !important;
-  background-color: #EC407A;
-  border-color: #EC407A;
-  text-decoration: none;
-}
-
-.btn-instander.download:hover {
-  transition: transform .5s;
-  transform: scale(1.2, 1.2);
-}
+    .btn-instander.download:hover {
+      transition: transform .5s;
+      transform: scale(1.2, 1.2);
+    }
 
 /* Dark Theme */
 @media (prefers-color-scheme: dark) {
@@ -553,138 +534,138 @@ img.carousel-item{
 
       <button onclick="topFunction()" id="myBtn" title="Go to top"><span class="mdi mdi-arrow-up mdi-24px"></span></button>
       <style type="text/css">
-      #myBtn {
-        height: 50px;
-        width: 50px;
-        display: none;
-        position: fixed;
-        bottom: 20px;
-        right: 30px;
-        z-index: 99;
-        border: none;
-        outline: none;
-        background-color: #EC407A;
-        color: white;
-        cursor: pointer;
-        border-radius: 50rem;
-      }
-
-      #myBtn:hover {
-        background-color: #AD1457;
-      }
-    </style>
-    <script>
-      var mybutton = document.getElementById("myBtn");
-
-      window.onscroll = function() {scrollFunction()};
-
-      function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          mybutton.style.display = "block";
-        } else {
-          mybutton.style.display = "none";
+        #myBtn {
+          height: 50px;
+          width: 50px;
+          display: none;
+          position: fixed;
+          bottom: 20px;
+          right: 30px;
+          z-index: 99;
+          border: none;
+          outline: none;
+          background-color: #EC407A;
+          color: white;
+          cursor: pointer;
+          border-radius: 50rem;
         }
-      }
 
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
-    </script>
-  </main>
+        #myBtn:hover {
+          background-color: #AD1457;
+        }
+      </style>
+      <script>
+        var mybutton = document.getElementById("myBtn");
 
-  <div class="modal fade" id="features-list" tabindex="-1" role="dialog" aria-labelledby="..." aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title gsmedium" id="ModalLabel">Instander features</h4>
-          <a class="close" data-dismiss="modal" aria-label="Close"><span class="mdi mdi-24px mdi-close"></span></a>
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+      </script>
+    </main>
+
+    <div class="modal fade" id="features-list" tabindex="-1" role="dialog" aria-labelledby="..." aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title gsmedium" id="ModalLabel">Instander features</h4>
+            <a class="close" data-dismiss="modal" aria-label="Close"><span class="mdi mdi-24px mdi-close"></span></a>
+          </div>
+          <div class="modal-body gsregular">
+           <ul>
+            <li>Developer mode;</li>
+            <li>Disable Ads;</li>
+            <li>Disable analytics;</li>
+            <li>Download photo/video/stories/IGTV;</li>
+            <li>Cyrillic fonts in stories;</li>
+            <li>Disable In-App Browser;</li>
+            <li>Zoom users avatars;</li>
+            <li>Photos in max quality;</li>
+            <li>Posting photo up to 2160 px and 95% compress;</li>
+            <li>Mark Direct messages as unread;</li>
+            <li>Hide tiping status in Direct;</li>
+            <li>Don't mark Stories as seen;</li>
+            <li>Improving the quality of Stories;</li>
+            <li>Verification badge (for material support of the project);</li>
+            <li>OTA Update;</li>
+            <li>Translation of settings into 25 language.</li>
+          </ul>
         </div>
-        <div class="modal-body gsregular">
-         <ul>
-          <li>Developer mode;</li>
-          <li>Disable Ads;</li>
-          <li>Disable analytics;</li>
-          <li>Download photo/video/stories/IGTV;</li>
-          <li>Cyrillic fonts in stories;</li>
-          <li>Disable In-App Browser;</li>
-          <li>Zoom users avatars;</li>
-          <li>Photos in max quality;</li>
-          <li>Posting photo up to 2160 px and 95% compress;</li>
-          <li>Mark Direct messages as unread;</li>
-          <li>Hide tiping status in Direct;</li>
-          <li>Don't mark Stories as seen;</li>
-          <li>Improving the quality of Stories;</li>
-          <li>Verification badge (for material support of the project);</li>
-          <li>OTA Update;</li>
-          <li>Translation of settings into 25 language.</li>
-        </ul>
       </div>
     </div>
   </div>
-</div>
-<footer class="mastfoot mt-auto">
-  <div class="inner gsregular">
-    <small class="text-muted">Made with <span class="mdi mdi-heart materialize-red-text"></span> by Dise<br>
-      Copyright <span class="mdi mdi-copyright"></span> 2014-2022 - All Right Reserved</a>
-    </small>
-  </div>
-</footer>
+  <footer class="mastfoot mt-auto">
+    <div class="inner gsregular">
+      <small class="text-muted">Made with <span class="mdi mdi-heart materialize-red-text"></span> by Dise<br>
+        Copyright <span class="mdi mdi-copyright"></span> 2014-2022 - All Right Reserved</a>
+      </small>
+    </div>
+  </footer>
 
-<script>
-  $.i18n.init({
-    defaultLanguage: 'en',
-    ns: { namespaces: ['ns.common', 'ns.special'], defaultNs: 'ns.special'},
-    useLocalStorage: false,
-    debug: true
-  }, function() {
-    $('#nav_home').text($.t('nav_home'));
-    $('#nav_project').text($.t('nav_project'));
-    $('#nav_blog').text($.t('nav_blog'));
-    $('#nav_donuts').text($.t('nav_donuts'));
-    $('#string_download_btn').text($.t('string_download_btn'));
-    $('#string_android').text($.t('string_android'));
-    $('#string_about').text($.t('string_about'));
-    $('#string_learn_more').text($.t('string_learn_more'));
-    $('#string_about_title').text($.t('string_about_title'));
-    $('#string_about_summary').text($.t('string_about_summary'));
-    $('#string_feature').text($.t('string_feature'));
-    $('#string_feature_summary').text($.t('string_feature_summary'));
-    $('#string_ads').text($.t('string_ads'));
-    $('#string_ads_summary').text($.t('string_ads_summary'));
-    $('#string_downloader').text($.t('string_downloader'));
-    $('#string_downloader_summary').text($.t('string_downloader_summary'));
-    $('#string_hq').text($.t('string_hq'));
-    $('#string_hq_summary').text($.t('string_hq_summary'));
-    $('#string_privacy').text($.t('string_privacy'));
-    $('#string_privacy_summary').text($.t('string_privacy_summary'));
-    $('#string_versions').text($.t('string_versions'));
-    $('#string_versions_summary').text($.t('string_versions_summary'));
-    $('#string_orig').text($.t('string_orig'));
-    $('#string_orig_summary').text($.t('string_orig_summary'));
-    $('#string_clone').text($.t('string_clone'));
-    $('#string_clone_summary').text($.t('string_clone_summary'));
-    $('#string_support').text($.t('string_support'));
-    $('#string_chats').text($.t('string_chats'));
-    $('#string_join').text($.t('string_join'));
-    $('#string_open').text($.t('string_open'));
-    $('#string_write').text($.t('string_write'));
-    $('#string_download_now').text($.t('string_download_now'));
-    $('#string_repo').text($.t('string_repo'));
-
-
-  });
-</script>
+  <script>
+    $.i18n.init({
+      defaultLanguage: 'en',
+      ns: { namespaces: ['ns.common', 'ns.special'], defaultNs: 'ns.special'},
+      useLocalStorage: false,
+      debug: true
+    }, function() {
+      $('#nav_home').text($.t('nav_home'));
+      $('#nav_project').text($.t('nav_project'));
+      $('#nav_blog').text($.t('nav_blog'));
+      $('#nav_donuts').text($.t('nav_donuts'));
+      $('#string_download_btn').text($.t('string_download_btn'));
+      $('#string_android').text($.t('string_android'));
+      $('#string_about').text($.t('string_about'));
+      $('#string_learn_more').text($.t('string_learn_more'));
+      $('#string_about_title').text($.t('string_about_title'));
+      $('#string_about_summary').text($.t('string_about_summary'));
+      $('#string_feature').text($.t('string_feature'));
+      $('#string_feature_summary').text($.t('string_feature_summary'));
+      $('#string_ads').text($.t('string_ads'));
+      $('#string_ads_summary').text($.t('string_ads_summary'));
+      $('#string_downloader').text($.t('string_downloader'));
+      $('#string_downloader_summary').text($.t('string_downloader_summary'));
+      $('#string_hq').text($.t('string_hq'));
+      $('#string_hq_summary').text($.t('string_hq_summary'));
+      $('#string_privacy').text($.t('string_privacy'));
+      $('#string_privacy_summary').text($.t('string_privacy_summary'));
+      $('#string_versions').text($.t('string_versions'));
+      $('#string_versions_summary').text($.t('string_versions_summary'));
+      $('#string_orig').text($.t('string_orig'));
+      $('#string_orig_summary').text($.t('string_orig_summary'));
+      $('#string_clone').text($.t('string_clone'));
+      $('#string_clone_summary').text($.t('string_clone_summary'));
+      $('#string_support').text($.t('string_support'));
+      $('#string_chats').text($.t('string_chats'));
+      $('#string_join').text($.t('string_join'));
+      $('#string_open').text($.t('string_open'));
+      $('#string_write').text($.t('string_write'));
+      $('#string_download_now').text($.t('string_download_now'));
+      $('#string_repo').text($.t('string_repo'));
 
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="//www.googletagmanager.com/gtag/js?id=UA-151959411-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    });
+  </script>
 
-  gtag('config', 'UA-151959411-1');
-</script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="//www.googletagmanager.com/gtag/js?id=UA-151959411-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-151959411-1');
+  </script>
 </body>
 </html>
