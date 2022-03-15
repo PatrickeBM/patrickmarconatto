@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Instander Verification</title>
+	<title>Instander Verification - Beta</title>
 
 	<!-- Favicon -->
 	<link rel="shortcut icon" href="/src/favicon.ico" type="image/x-icon">
@@ -209,7 +209,7 @@
 					</svg>
 				</span>
 				<nav class="nav nav-masthead justify-content-center">
-					<a class="nav-link active" href="#"><span id="nav_home"></span></a>
+					<a class="nav-link" href="/"><span id="nav_home"></span></a>
 					<a class="nav-link dropdown-toggle" href="#" id="projects" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span id="nav_project"></span></a>
 					<div class="dropdown-menu " aria-labelledby="projects">
 						<a class="dropdown-item" href="/instander/">Instander</a>
@@ -219,13 +219,13 @@
 					</div>
 					<a class="nav-link" href="tg://resolve?domain=thedise"><span id="nav_blog"></span></a>
 					<a class="nav-link" href="/donuts/"><span id="nav_donuts"></span></a>
-					<div class="nav-link dropleft">
+<!-- 					<div class="nav-link dropleft">
 						<span id="lang" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="mdi mdi-web"></span>
 						<div class="dropdown-menu " aria-labelledby="lang">
 							<a class="dropdown-item" href="?setLng=en">English</a>
 							<a class="dropdown-item" href="?setLng=ru">Русский</a>
 						</div>
-					</div>
+					</div> -->
 				</nav>
 			</div>
 		</header>
@@ -234,7 +234,8 @@
 
 			<form class="g-form" id="g-form-1" method="POST" action="" autocomplete="off">
 				<!-- <p class="lead gsregular"><span id="about"></span></p> -->
-				<h2 class="g-form__title g-form__title_main gsregular">Leave a request right now</h2>
+				<h1 class="display-4 gsbold">Instander Verify</h1>
+				<h2 class="lead g-form__title g-form__title_main gsregular">Leave a request right now</h2>
 				<h2 class="g-form__title g-form__title_respond gsregular"></h2>
 				<div class="g-form__preloader"></div>
 				<div class="g-form__inputs">
@@ -244,16 +245,16 @@
 							<option value="Ethereum">Ethereum</option>
 							<option value="TON Coin">TON Coin</option>
 							<option value="YooMoney">YooMoney</option>
-							<option disabled selected hidden value="">Выберете платежную систему</option>
+							<option disabled selected hidden value="">Choose a payment system</option>
 						</select>
 					</fieldset>
 
 					<!-- Mono -->
 					<fieldset class="g-form__input-wrapper">
-						<input class="g-form__input g-form__input_value" id="value" name="Value" placeholder="Сумма перевода" required>
+						<input class="g-form__input g-form__input_value" id="value" name="Value" placeholder="Transfer amount" required>
 					</fieldset>
 					<fieldset class="g-form__input-wrapper">
-						<input style="text-transform: uppercase;" type="datetime-local" class="g-form__input" id="date" name="Date" placeholder="Дата перевода" required>
+						<input class="g-form__input" id="date" name="Date" placeholder="Date of transfer" required>
 					</fieldset>
 					<div id="explanatoryText">
 						<div></div>
@@ -271,22 +272,22 @@
 					</div>
 
 					<fieldset class="g-form__input-wrapper">
-						<input class="g-form__input g-form__input_username" name="Username" placeholder="Введите ваш @username">
+						<input class="g-form__input g-form__input_username" name="Username" placeholder="Enter your @username" required>
 					</fieldset>
 
 					<fieldset class="g-form__input-wrapper">
-						<textarea id="message" name="Message" rows="10"
-						placeholder="Введите сообщение"></textarea>
+						<textarea id="message" name="Message" rows="10" placeholder="Enter your message"></textarea>
 					</fieldset>
 
 					<fieldset class="g-form__input-wrapper g-form__input-wrapper_hidden">
 						<label for="honeypot">Помогает бороться со спамом. Должно быть пустым!</label>
 						<input id="honeypot" type="text" name="honeypot" value="">
 					</fieldset>
-
 					<div class="g-form__button-wrapper">
-						<button class="g-form__button">Submit</button>
+						<button class="g-form__button gsregular">Submit</button>
 					</div>
+					<br>
+					<!-- <a style="color: #444444">Attention! This form is in beta testing. Write about errors to </a><a href="tg://resolve?domain=the_dise" data-tooltip="Telegram">@the_dise</a> -->
 				</div>
 			</form>
 		</main>
@@ -343,6 +344,12 @@
 				}
 			});
 		});
+
+		var dtt = document.getElementById('date')
+		dtt.onfocus = function (event) {
+			this.type = 'datetime-local';
+			this.focus();
+		}
 	</script>
 
 	<script>
