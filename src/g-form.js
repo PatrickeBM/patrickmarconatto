@@ -6,10 +6,10 @@ $(function() {
 		let appLink = "https://script.google.com/macros/s/AKfycbxkq27LaUsnnKnoliGnL4LgGJUIzM494yu6PoA80uR-u5kkdCLTbSwmrcxZSVwhD4d5/exec";
 
 		// Сообщение при успешной отправке данных
-		let successRespond = 'Успешно отправлено';
+		let successRespond = 'Successfully sent';
 
 		// Сообщение при ошибке в отправке данных
-		let errorRespond = 'Не удалось отправить сообщение. Свяжитесь с администратором сайта по почту <a href="mailto:admin@thedise.me">admin@thedise.me</a>';
+		let errorRespond = 'Failed to send message. Contact the site administrator <a href="tg://resolve?domain=the_dise">@the_dise</a>';
 
 		// Id текущей формы
 		let form = $('#' + $(this).attr('id'))[0];
