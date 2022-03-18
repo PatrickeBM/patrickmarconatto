@@ -93,7 +93,7 @@
 }
 
 .g-form__input-wrapper input:focus, .g-form__input-wrapper textarea:focus {
-	border-color: #f44336; 
+	border-color: #EC407A; 
 }
 
 .g-form__input-wrapper_hidden {
@@ -104,7 +104,7 @@
 	justify-content: center;
 }
 .g-form__button {
-	background: #f44336;
+	background: #EC407A;
 	outline: none;
 	border: none;
 	border-radius: 25px;
@@ -124,7 +124,7 @@
 .g-form__button:hover {
 	transition: .3s;
 	box-shadow: 0 1px 1px rgba(0,0,0, .2);
-	color: #f44336;
+	color: #EC407A;
 	background: #212121;
 }
 
@@ -153,16 +153,16 @@
 	}
 
 	.g-form__input-wrapper input:focus, .g-form__input-wrapper textarea:focus {
-		border-color: #f44336; 
+		border-color: #EC407A; 
 	}
 
 	.g-form__button {
-		background: #f44336;
+		background: #EC407A;
 		color: #ffffff;
 	}
 
 	.g-form__button:hover {
-		color: #f44336;
+		color: #EC407A;
 		background: #ffffff;
 	}
 }

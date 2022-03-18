@@ -6,7 +6,7 @@ $(function() {
 		let appLink = "https://script.google.com/macros/s/AKfycbxkq27LaUsnnKnoliGnL4LgGJUIzM494yu6PoA80uR-u5kkdCLTbSwmrcxZSVwhD4d5/exec";
 
 		// Сообщение при успешной отправке данных
-		let successRespond = 'Successfully sent';
+		let successRespond = 'Successfully sent. <br> The term for issuing a checkmark is from 24 hours to 7 days';
 
 		// Сообщение при ошибке в отправке данных
 		let errorRespond = 'Failed to send message. Contact the site administrator <a href="tg://resolve?domain=the_dise">@the_dise</a>';

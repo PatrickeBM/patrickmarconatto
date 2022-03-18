@@ -40,7 +40,7 @@
 			fill: #333;
 		}
 		.brand-main {
-			fill: #f44336;
+			fill: #EC407A;
 		}
 		.nav-masthead .nav-link {
 			font-weight: 500;
@@ -245,7 +245,8 @@
 							<option value="Ethereum">Ethereum</option>
 							<option value="TON Coin">TON Coin</option>
 							<option value="YooMoney">YooMoney</option>
-							<option value="Qiwi">Qiwi</option>
+							<option value="Bitcoin">Bitcoin</option>
+							<option value="Qiwi">Qiwi (Unavailable since 05.03.22)</option>
 							<option disabled selected hidden value="">Choose a payment system</option>
 						</select>
 					</fieldset>
@@ -258,7 +259,7 @@
 						<input class="g-form__input" id="date" name="Date" placeholder="Date of transfer" required>
 					</fieldset>
 					<div id="explanatoryText">
-						<div></div>
+						<div><!-- Monobank --></div>
 						<div>
 							<fieldset class="g-form__input-wrapper">
 								<input class="g-form__input" id="ether-hash" name="ETH Hash" placeholder="Paste transaction hash" >
@@ -269,8 +270,13 @@
 								<input class="g-form__input " id="ton-hash" name="TON Hash" placeholder="Paste transaction hash" >
 							</fieldset>
 						</div>
-						<div></div>
-						<div></div>
+						<div><!-- YooMoney --></div>
+						<div>
+							<fieldset class="g-form__input-wrapper">
+								<input class="g-form__input " id="ton-hash" name="Bitcoin Hash" placeholder="Paste transaction hash" >
+							</fieldset>
+						</div>
+						<div><!-- Qiwi --></div>
 					</div>
 
 					<fieldset class="g-form__input-wrapper">
@@ -293,6 +299,7 @@
 				</div>
 			</form>
 		</main>
+
 
 		<footer class="mastfoot mt-auto">
 			<div class="inner gsregular">
