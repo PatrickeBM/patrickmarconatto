@@ -1,0 +1,6 @@
+{
+	"version": "15.4",
+	"changelog": "— Migration to Instagram version 232.0.0.16.114;\n— Added Monet color scheme support for Android 12+;\n— Added Animated Splash for Android 12+;\n— Added Themed Icon for Android 13+;\n— Added In-App Lock (Beta);\n— Added 60 second stories;\n— Added Developer Mode decoder (MobileConfig);\n— Added new Instadner Sans font (Latin, Cyrillic, Thai, Tamil, Persians support);",
+	"changelog-ru": "— В связи с ограничениями блокировки некоторых платежных систем, они были удалены из списка пожертвований.\n\n#NoWar",
+	"link": "https://build.vanutp.dev/instander/instander-15.4.apk"
+}
