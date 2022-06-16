@@ -246,143 +246,149 @@
 							<option value="TON Coin">TON Coin</option>
 							<option value="YooMoney">YooMoney</option>
 							<option value="Bitcoin">Bitcoin</option>
+							<option value="USDT">USDT</option>
 							<!-- <option value="Qiwi">Qiwi (Unavailable since 05.03.22)</option>
-							<option value="Tinkoff">Tinkoff (Unavailable since 01.02.22)</option> -->
-							<option disabled selected hidden value="">Choose a payment system</option>
-						</select>
-					</fieldset>
+								<option value="Tinkoff">Tinkoff (Unavailable since 01.02.22)</option> -->
+								<option disabled selected hidden value="">Choose a payment system</option>
+							</select>
+						</fieldset>
 
-					<!-- Mono -->
-					<fieldset class="g-form__input-wrapper">
-						<input class="g-form__input g-form__input_value" id="value" name="Value" placeholder="Transfer amount" required>
-					</fieldset>
-					<fieldset class="g-form__input-wrapper">
-						<input class="g-form__input" id="date" name="Date" placeholder="Date of transfer" required>
-					</fieldset>
-					<div id="explanatoryText">
-						<div><!-- Monobank --></div>
-						<div>
-							<fieldset class="g-form__input-wrapper">
-								<input class="g-form__input" id="ether-hash" name="Hash" placeholder="Paste transaction hash" >
-							</fieldset>
+						<!-- Mono -->
+						<fieldset class="g-form__input-wrapper">
+							<input class="g-form__input g-form__input_value" id="value" name="Value" placeholder="Transfer amount" required>
+						</fieldset>
+						<fieldset class="g-form__input-wrapper">
+							<input class="g-form__input" id="date" name="Date" placeholder="Date of transfer" required>
+						</fieldset>
+						<div id="explanatoryText">
+							<div><!-- Monobank --></div>
+							<div>
+								<fieldset class="g-form__input-wrapper">
+									<input class="g-form__input" id="ether-hash" name="Hash" placeholder="Paste transaction hash" >
+								</fieldset>
+							</div>
+							<div>
+								<fieldset class="g-form__input-wrapper">
+									<input class="g-form__input " id="ether-hash" name="Hash" placeholder="Paste transaction hash" >
+								</fieldset>
+							</div>
+							<div><!-- YooMoney --></div>
+							<div>
+								<fieldset class="g-form__input-wrapper">
+									<input class="g-form__input " id="ether-hash" name="Hash" placeholder="Paste transaction hash" >
+								</fieldset>
+							</div>
+							<div>
+								<fieldset class="g-form__input-wrapper">
+									<input class="g-form__input " id="ether-hash" name="Hash" placeholder="Paste transaction hash" >
+								</fieldset>
+							</div>
 						</div>
-						<div>
-							<fieldset class="g-form__input-wrapper">
-								<input class="g-form__input " id="ether-hash" name="Hash" placeholder="Paste transaction hash" >
-							</fieldset>
+
+						<fieldset class="g-form__input-wrapper">
+							<input class="g-form__input g-form__input_username" name="Username" placeholder="Enter your @username" required>
+						</fieldset>
+
+						<fieldset class="g-form__input-wrapper">
+							<textarea id="message" name="Message" rows="10" placeholder="Enter your message"></textarea>
+						</fieldset>
+
+						<fieldset class="g-form__input-wrapper g-form__input-wrapper_hidden">
+							<label for="honeypot">Помогает бороться со спамом. Должно быть пустым!</label>
+							<input id="honeypot" type="text" name="honeypot" value="">
+						</fieldset>
+						<div class="g-form__button-wrapper">
+							<button class="g-form__button gsregular">Submit</button>
 						</div>
-						<div><!-- YooMoney --></div>
-						<div>
-							<fieldset class="g-form__input-wrapper">
-								<input class="g-form__input " id="ether-hash" name="Hash" placeholder="Paste transaction hash" >
-							</fieldset>
-						</div>
+						<br>
+						<!-- <a style="color: #444444">Attention! This form is in beta testing. Write about errors to </a><a href="tg://resolve?domain=the_dise" data-tooltip="Telegram">@the_dise</a> -->
 					</div>
+				</form>
+			</main>
 
-					<fieldset class="g-form__input-wrapper">
-						<input class="g-form__input g-form__input_username" name="Username" placeholder="Enter your @username" required>
-					</fieldset>
 
-					<fieldset class="g-form__input-wrapper">
-						<textarea id="message" name="Message" rows="10" placeholder="Enter your message"></textarea>
-					</fieldset>
-
-					<fieldset class="g-form__input-wrapper g-form__input-wrapper_hidden">
-						<label for="honeypot">Помогает бороться со спамом. Должно быть пустым!</label>
-						<input id="honeypot" type="text" name="honeypot" value="">
-					</fieldset>
-					<div class="g-form__button-wrapper">
-						<button class="g-form__button gsregular">Submit</button>
-					</div>
-					<br>
-					<!-- <a style="color: #444444">Attention! This form is in beta testing. Write about errors to </a><a href="tg://resolve?domain=the_dise" data-tooltip="Telegram">@the_dise</a> -->
+			<footer class="mastfoot mt-auto">
+				<div class="inner gsregular">
+					<small class="text-muted">Copyright <span class="mdi mdi-copyright"></span> 2014-2022 - <a href="#">the_dise</a> - All Right Reserved</a>
+					</small>
 				</div>
-			</form>
-		</main>
+			</footer>
+		</div>
 
-
-		<footer class="mastfoot mt-auto">
-			<div class="inner gsregular">
-				<small class="text-muted">Copyright <span class="mdi mdi-copyright"></span> 2014-2022 - <a href="#">the_dise</a> - All Right Reserved</a>
-				</small>
-			</div>
-		</footer>
-	</div>
-
-	<!-- i18n script -->
-	<script>
-		$.i18n.init({
-			defaultLanguage: 'en',
-			ns: { namespaces: ['ns.common', 'ns.special'], defaultNs: 'ns.special'},
-			useLocalStorage: false,
-			debug: false
-		}, function() {
-			$('#about').text($.t('about'));
-			$('#nav_home').text($.t('nav_home'));
-			$('#nav_project').text($.t('nav_project'));
-			$('#nav_blog').text($.t('nav_blog'));
-			$('#nav_donuts').text($.t('nav_donuts'));
-		});
-	</script>
-
-	<!-- dropdown -->
-	<script type="text/javascript">
-		$('#lang').on('show.bs.dropdown', function () {
-		})
-	</script>
-
-	<!-- Username mask -->
-	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
-	<script>
-		$(function() {
-			$('.g-form__input_username').mask('@ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ', {
-				translation: {
-					'Z': {
-						pattern: /[a-z_0-9.]/, optional: true
-					}
-				}
-			});
-		});
-
-		$(function() {
-			$('.g-form__input_value').mask('ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ', {
-				translation: {
-					'Z': {
-						pattern: /[0-9.]/, optional: true
-					}
-				}
-			});
-		});
-
-		var dtt = document.getElementById('date')
-		dtt.onfocus = function (event) {
-			this.type = 'datetime-local';
-			this.focus();
-		}
-	</script>
-
-	<script>
-		$('#name').click(
-			function(){
-				$(this).change();
-			});
-		$('#name').change(
-			function(){
-				var index = $(this).find('option:selected').index();
-				$('#explanatoryText div.descriptor').removeClass('descriptor');
-				$('#explanatoryText div').eq(index).addClass('descriptor');
-			});
-		</script>
-		<script src="/src/g-form.js"></script>
-
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="//www.googletagmanager.com/gtag/js?id=UA-151959411-1"></script>
+		<!-- i18n script -->
 		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-
-			gtag('config', 'UA-151959411-1');
+			$.i18n.init({
+				defaultLanguage: 'en',
+				ns: { namespaces: ['ns.common', 'ns.special'], defaultNs: 'ns.special'},
+				useLocalStorage: false,
+				debug: false
+			}, function() {
+				$('#about').text($.t('about'));
+				$('#nav_home').text($.t('nav_home'));
+				$('#nav_project').text($.t('nav_project'));
+				$('#nav_blog').text($.t('nav_blog'));
+				$('#nav_donuts').text($.t('nav_donuts'));
+			});
 		</script>
-	</body>
-	</html>
+
+		<!-- dropdown -->
+		<script type="text/javascript">
+			$('#lang').on('show.bs.dropdown', function () {
+			})
+		</script>
+
+		<!-- Username mask -->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+		<script>
+			$(function() {
+				$('.g-form__input_username').mask('@ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ', {
+					translation: {
+						'Z': {
+							pattern: /[a-z_0-9.]/, optional: true
+						}
+					}
+				});
+			});
+
+			$(function() {
+				$('.g-form__input_value').mask('ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ', {
+					translation: {
+						'Z': {
+							pattern: /[0-9.]/, optional: true
+						}
+					}
+				});
+			});
+
+			var dtt = document.getElementById('date')
+			dtt.onfocus = function (event) {
+				this.type = 'datetime-local';
+				this.focus();
+			}
+		</script>
+
+		<script>
+			$('#name').click(
+				function(){
+					$(this).change();
+				});
+			$('#name').change(
+				function(){
+					var index = $(this).find('option:selected').index();
+					$('#explanatoryText div.descriptor').removeClass('descriptor');
+					$('#explanatoryText div').eq(index).addClass('descriptor');
+				});
+			</script>
+			<script src="/src/g-form.js"></script>
+
+			<!-- Global site tag (gtag.js) - Google Analytics -->
+			<script async src="//www.googletagmanager.com/gtag/js?id=UA-151959411-1"></script>
+			<script>
+				window.dataLayer = window.dataLayer || [];
+				function gtag(){dataLayer.push(arguments);}
+				gtag('js', new Date());
+
+				gtag('config', 'UA-151959411-1');
+			</script>
+		</body>
+		</html>
